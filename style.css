@@ -1,0 +1,135 @@
+/*-------------------------------------*/
+/* All elements  */
+/*-------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /*background-image: linear-gradient(to right, #f5f7fa, #c3cfe2);*/
+    background-image: linear-gradient(to right, #f5f7fa, #c2e5a5);
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*-------------------------------------*/
+/* Clock and game box  */
+/*-------------------------------------*/
+
+.clockDisplay,
+.gameDisplay {
+    border-radius: 10%;
+}
+
+.clockDisplay {
+    background: #111010;
+    color: #fff;
+}
+
+.clock {
+    background: #000;
+    color: #fff;
+}
+
+.card {
+    padding: 20px;
+    opacity: 1;
+    z-index: 20;
+}
+
+.clock {
+    font-size: 65px;
+    padding: 20px;
+    /*color: #c21807;*/
+    color: #cc0000;
+}
+
+.clock p {
+    display: inline;
+}
+
+/*-------------------------------------*/
+/* Inputs  */
+/*-------------------------------------*/
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.hourContainer,
+.minuteContainer {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+input {
+    padding: 10px;
+}
+
+
+/*-------------------------------------*/
+/* Messages  */
+/*-------------------------------------*/
+
+.statusMessage,
+.gameStatusMessage {
+    padding: 10px;
+    color: #fff;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.error {
+    background: #cc0000;
+}
+
+.success {
+    background: #5cb85c;
+}
+
+.selectTime {
+    margin-top: 20px;
+}
+
+/*-------------------------------------*/
+/* Buttons */
+/*-------------------------------------*/
+
+.againButton {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.submitButton,
+.againButton {
+    margin-top: 20px;
+    padding: 10px 50px;
+    background: #5cb85c;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+}
+
+.submitButton:hover,
+.againButton:hover  {
+    background-color: #377437;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #377437;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.submitButton:focus,
+.againButton:focus,
+input:focus {
+    outline: none;
+    box-shadow: none;
+}

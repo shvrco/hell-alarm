@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hell Alarm Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 mt-5 mx-auto text-center">
+                <div class="card clockDisplay">
+                    <h1 class="card-title">Current time</h1>
+                    <div class="clock"></div>
+
+                    <div class="selectTime">
+                        <h1 class="card-title">Please select Time</h1>
+                        <div class="inputContainer">
+                            <div class="hourContainer">
+                                <label>Hour</label>
+                                <input type="number" id="hourInput">
+                            </div>
+                            <!--end of hourContainer-->
+                            <div class="minuteContainer">
+                                <label>Minutes</label>
+                                <input type="number" id="minuteInput">
+                            </div>
+                            <!--end of minuteContainer-->
+                        </div>
+                        <button class="btn submitButton">Set Alarm</button>
+
+                        <div class="statusMessage"></div>
+                    </div>
+                    <!--end of selectTime-->
+                </div>
+                <!--end of card/clockDisplay-->
+            </div>
+        </div>
+        <!--end of row-->
+
+        <div class="col-md-6 mt-5 mx-auto text-center">
+            <div class="card gameDisplay">
+                <h1 class="card-title gameTitle">
+                    Guess a random number
+                    <br> 0 -
+                    <span class="numberLimit"></span>
+                    <br> to stop alarm!
+                </h1>
+                <input type="number" id="guessNumberInput" autofocus>
+                <div class="gameStatusMessage"></div>
+                <button class="btn againButton">Set again?</button>
+            </div>
+            <!--end of card/gameDisplay-->
+        </div>
+
+    </div>
+    <!--end of container-->
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
